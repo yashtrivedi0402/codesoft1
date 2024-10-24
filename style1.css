@@ -1,0 +1,238 @@
+/* CSS Variables for Color Theme Inspired by Rare Beauty */
+:root {
+    --primary-color: rgb(246, 248, 249);
+    --secondary-color: #1691de;
+    --text-color: #f6f9fa;
+    --btn-text-color: white;
+    --hover-color: #0fb0eb;
+    --footer-text-color: #f8e9e3;
+    --heading--:rgb(253, 251, 251);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: sans-serif;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: var(--primary-color);
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: var(--secondary-color);
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+header h1 {
+    display: inline-block;
+    font-size: 30px;
+    color: var(--text-color);
+}
+
+nav ul {
+    list-style: none;
+    display: inline-block;
+    float: right;
+}
+
+nav ul li {
+    display: inline;
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-size: 20px;
+}
+
+nav ul li a:hover {
+    color: var(--heading);
+}
+
+
+.hero {
+    height: 100vh;
+    background: url('bike2.jpg') no-repeat center center/cover;
+    height: 100vh;
+    color: var(--text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: start;
+}
+
+.hero h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    /* color: var(--heading--); */
+    color:#0fb0eb
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color:var(--heading--);
+}
+
+.btn {
+    padding: 10px 20px;
+    border: 2px solid var(--text-color); 
+    padding: 20px;
+    border-radius: 10px;
+    color: var(--heading);
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--hover-color);
+    color:var(--primary-color);
+}
+
+.products {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.products h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product {
+    width: 30%;
+    padding: 10px;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease;
+}
+
+.product img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.product h3 {
+    margin-top: 15px;
+    font-size: 24px;
+    color: var(--secondary-color);
+}
+
+.product p {
+    color: var(--secondary-color);
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+
+.contact {
+    padding: 50px 0;
+    background-color: var(--primary-color);
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: var(--heading);
+}
+
+.contact p {
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+}
+
+.contact .form-group {
+    margin-bottom: 20px;
+}
+
+.contact label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: var(--secondary-color);
+}
+
+.contact input {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 2px solid rgb(39, 146, 212);
+    border-radius: 5px;
+}
+.social-icons {
+    display: flex;
+    margin-top: 1.5rem;
+}
+.social-icons a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    background: transparent;
+    border: 2px solid var(--secondary-color);
+    border-radius: 50%;
+    color: var(--main-color);
+    margin: 3rem 0.5rem;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: var(--primary-color); 
+    background-color: var(--secondary-color);
+    box-shadow: 0 0 25px var(--secondary-color);
+    transform: scale(1.2) translateY(-5px);
+}
+.about{
+    padding: 50px 0;
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: var(--heading-c);
+    align-items: center;
+    padding: 50px 0;
+}
+.about p {
+    color: var(--secondary-color);
+    margin-bottom: 30px;
+}
+footer {
+    background-color: var(--secondary-color);
+    color: var(--footer-text-color);
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+}
